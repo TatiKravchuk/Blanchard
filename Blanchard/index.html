@@ -60,143 +60,157 @@
         </p>
       </div>
     </article>
-    <article class="article">
+    <article class="article article-third">
       <div class="container">
-        <div>
-          <h2 class="h second-title">Галерея</h2>
-          <form>
+        <h2 class="h second-title gallery-title">Галерея</h2>
+        <div class="gallery-container flex">
+          <form name="gallery">
             <fieldset class="fieldset">
-              <label for="first-radio">
-                <input type="radio" name="pickture" id="first-radio" checked class="input">
-                XIX век
+              <label for="first-radio" class="label" onclick="changeImageXIX()">
+                <input type="radio" name="xix" id="first-radio">
+                <span>XIX век</span>
               </label>
-              <label for="second-radio">
-                <input type="radio" name="pickture" id="second-radio" class="input">
-                XX век
+              <label for="second-radio" class="label" onclick="changeImageXX()">
+                <input type="radio" name="xx" id="second-radio">
+                <span>XX век</span>
               </label>
-              <label for="third-radio">
-                <input type="radio" name="pickture" id="third-radio" class="input">
-                Современность
+              <label for="third-radio" class="label" onclick="changeImageXXI()">
+                <input type="radio" name="xxi" id="third-radio">
+                <span>Современность</span>
               </label>
             </fieldset>
           </form>
-        </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="flex">
+            <div class="gallery-image"><img src="./assets/images/xx-gallery-first.jpg" alt="first picture" class="gallery-image__one"></div>
+            <div class="gallery-image"><img src="./assets/images/xx-gallery-second.jpg" alt="second picture" class="gallery-image__two"></div>
+            <div class="gallery-image"><img src="./assets/images/xx-gallery-third.jpg" alt="third picture" class="gallery-image__three"></div>
+          </div>
         </div>
       </div>
     </article>
     <article class="article">
       <div class="container">
-        <div>
+        <div class="catalog-container__first">
           <h2 class="h second-title">Каталог</h2>
-          <p class="p">
+          <p class="p catalog-paragraph">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
           </p>
         </div>
-        <section>
-          <img src="./assets/images/Domeniko-Girlandaio.jpg" alt="Domeniko Girlandaio">
-          <div>
-            <h3 class="h">Доменико Гирландайо</h3>
-            <div>
-              <time datetime="1448-06-02">2 июня 1448</time>
-              <span>-</span>
-              <time datetime="1494-01-11">11 января 1494</time>
+        <div class="catalog-container__second">
+          <section class="catalog-section">
+            <img src="./assets/images/Domeniko-Girlandaio.jpg" alt="Domeniko Girlandaio" class="catalog-section__image">
+            <div class="catalog-box__big">
+              <div class="catalog-box__little">
+                <h3 class="h catalog-box__title">Доменико Гирландайо</h3>
+                <div class="catalog-box__date">
+                  <time datetime="1448-06-02">2 июня 1448</time>
+                  <span>-</span>
+                  <time datetime="1494-01-11">11 января 1494</time>
+                </div>
+                <p class="p catalog-box__paragraph">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                </p>
+              </div>
             </div>
-            <p class="p">
-              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
-            </p>
-          </div>
-        </section>
-        <section>
-          <img src="./assets/images/Andrea-del-Verrokko.jpg" alt="Andrea del Verrokko">
-          <div>
-            <h3 class="h">Андреа дель Верроккьо</h3>
-            <div>
-              <time datetime="1435">1435</time>
-              <span>-</span>
-              <time datetime="1488-10-10">10 октября 1488</time>
+          </section>
+          <section class="catalog-section">
+            <img src="./assets/images/Andrea-del-Verrokko.jpg" alt="Andrea del Verrokko" class="catalog-section__image">
+            <div class="catalog-box__big">
+              <div class="catalog-box__little">
+                <h3 class="h catalog-box__title">Андреа дель Верроккьо</h3>
+                <div class="catalog-box__date">
+                  <time datetime="1435">1435</time>
+                  <span>-</span>
+                  <time datetime="1488-10-10">10 октября 1488</time>
+                </div>
+                <p class="p catalog-box__paragraph">
+                  Творческий путь молодого Андреа, как и многих знаменитых художников и скульпторов эпохи Возрождения, начался с обучения и работы в одной из ювелирных мастерских Флоренции. Там он занимался не только изготовлением драгоценных украшений, но и познавал основы живописи, пластики и архитектуры. Его первым учителем был Джулиано Веррокки, фамилию которого в несколько изменённом виде Андреа заимствовал для своего будущего псевдонима.
+                </p>
+              </div>
             </div>
-            <p class="p">
-              Творческий путь молодого Андреа, как и многих знаменитых художников и скульпторов эпохи Возрождения, начался с обучения и работы в одной из ювелирных мастерских Флоренции. Там он занимался не только изготовлением драгоценных украшений, но и познавал основы живописи, пластики и архитектуры. Его первым учителем был Джулиано Веррокки, фамилию которого в несколько изменённом виде Андреа заимствовал для своего будущего псевдонима.
-            </p>
-          </div>
-        </section>
-        <section>
-          <img src="./assets/images/Lorenco-di-Kredi.jpg" alt="Lorenco di Kredi">
-          <div>
-            <h3 class="h">Лоренцо ди Креди</h3>
-            <div>
-              <time datetime="1459">1459</time>
-              <span></span>
-              <time datetime="1537-01-15">12 января 1537</time>
+          </section>
+          <section class="catalog-section">
+            <img src="./assets/images/Lorenco-di-Kredi.jpg" alt="Lorenco di Kredi" class="catalog-section__image">
+            <div class="catalog-box__big">
+              <div class="catalog-box__little">
+                <h3 class="h catalog-box__title">Лоренцо ди Креди</h3>
+                <div class="catalog-box__date">
+                  <time datetime="1459">1459</time>
+                  <span></span>
+                  <time datetime="1537-01-15">12 января 1537</time>
+                </div>
+                <p class="p catalog-box__paragraph">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                </p>
+              </div>
             </div>
-            <p class="p">
-              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
-            </p>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </article>
     <article class="article">
       <div class="container">
         <h2 class="h second-title">События</h2>
-        <div>
-          <section>
-            <img src="./assets/images/event1.png" alt="first event image">
-            <div>
-              <p class="p">Музей им. Щусева</p>
-              <div>
-                <span>с</span>
-                <time datetime="03-20">20 марта</time>
-                <span>по</span>
-                <time datetime="04-30">30 апреля</time>
+        <div class="flex event-container">
+          <section class="event-section">
+            <img src="./assets/images/event1.png" alt="first event image" class="event-image">
+            <div class="event-box">
+              <div class="event-date">
+                <p class="p">Музей им. Щусева</p>
+                <div>
+                  <span>с</span>
+                  <time datetime="03-20">20 марта</time>
+                  <span>по</span>
+                  <time datetime="04-30">30 апреля</time>
+                </div>
               </div>
+              <div>
+                <h3 class="h event-title">Книжная гравюра в живом восприятии</h3>
+                <p class="p event-paragraph">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо
+                </p>
+              </div>
+              <a href="#" class="a event-link">Подробнее</a>
             </div>
-            <div>
-              <h3 class="h">Книжная гравюра в живом восприятии</h3>
-              <p class="p">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо
-              </p>
-            </div>
-            <a href="#" class="a">Подробнее</a>
           </section>
-          <section>
-            <img src="./assets/images/event2.png" alt="second event image">
-            <div>
-              <p class="p">ММОМА</p>
-              <div>
-                <time datetime="03-24">24 марта 19:00</time>
+          <section class="event-section">
+            <img src="./assets/images/event2.png" alt="second event image" class="event-image">
+            <div class="event-box">
+              <div class="event-date">
+                <p class="p">ММОМА</p>
+                <div>
+                  <time datetime="03-24">24 марта 19:00</time>
+                </div>
               </div>
+              <div>
+                <h3 class="h event-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="p event-paragraph">
+                  Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта
+                </p>
+              </div>
+              <a href="#" class="a event-link">Подробнее</a>
             </div>
-            <div>
-              <h3 class="h">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-              <p class="p">
-                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта
-              </p>
-            </div>
-            <a href="#" class="a">Подробнее</a>
           </section>
-          <section>
-            <img src="./assets/images/event3.png" alt="third event image">
-            <div>
-              <p class="p">Еврейский музей</p>
-              <div>
-                <span>с</span>
-                <time datetime="03-31">31 марта</time>
-                <span>по</span>
-                <time datetime="04-21">21 апреля</time>
+          <section class="event-section">
+            <img src="./assets/images/event3.png" alt="third event image" class="event-image">
+            <div class="event-box">
+              <div class="event-date">
+                <p class="p">Еврейский музей</p>
+                <div>
+                  <span>с</span>
+                  <time datetime="03-31">31 марта</time>
+                  <span>по</span>
+                  <time datetime="04-21">21 апреля</time>
+                </div>
               </div>
+              <div>
+                <h3 class="h event-title">Выставка «Формация 2020»</h3>
+                <p class="p event-paragraph">
+                  Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений
+                </p>
+              </div>
+              <a href="#" class="a event-link">Подробнее</a>
             </div>
-            <div>
-              <h3 class="h">Выставка «Формация 2020»</h3>
-              <p class="p">
-                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений
-              </p>
-            </div>
-            <a href="#" class="a">Подробнее</a>
           </section>
         </div>
       </div>
@@ -204,49 +218,50 @@
     <article class="article">
       <div class="container">
         <h2 class="h second-title">Проекты</h2>
-        <p class="p">
+        <p class="p project-paragraph">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершённой неузнаваемости.
         </p>
-        <h3 class="h">Партнёры проектов:</h3>
+        <h3 class="h project-title__little">Партнёры проектов:</h3>
         <div>
-          <img src="./assets/images/Freelands-Foundation.svg" alt="Freelands Foundation">
+          <img src="./assets/images/Freelands-Foundation.svg" alt="Freelands Foundation" class="project-image__first">
           <img src="./assets/images/Inst-for-Cont-Art.svg" alt="Institute for Contemporary Art">
         </div>
       </div>
     </article>
-    <article>
-      <div class="container">
-        <div>
-          <h3 class="h">Шоурум № 4</h3>
-          <address><p class="p">Леонтьевский переулок, дом 5/1</p></address>
+    <article class="contact-article flex">
+      <div class="container flex contact-container">
+        <div class="contact-box">
+          <h3 class="h contact-title contact-title">Шоурум № 4</h3>
+          <address><p class="p contact-address">Леонтьевский переулок, дом 5/1</p></address>
         </div>
-        <form>
-          <div>
-            <input type="text" placeholder="Имя*" class="input">
-            <input type="tel" placeholder="Телефон*" class="input">
-            <input type="submit" value="Заказать обратный звонок" class="input">
+        <form class="contact-box">
+          <div class="flex">
+            <input type="text" placeholder="Имя*" class="input contact-input">
+            <input type="tel" placeholder="Телефон*" class="input contact-input">
+            <input type="submit" value="Заказать обратный звонок" class="input contact-input">
           </div>
         </form>
-        <div>
-          <h3 class="h">Связаться в один клик</h3>
+        <div class="contact-box">
+          <h3 class="h contact-title contact-title__second">Связаться в один клик</h3>
           <div>
-            <div></div>
-            <div></div>
+            <div class="contact-snetwork contact-snetwork__w"></div>
+            <div class="contact-snetwork contact-snetwork__t"></div>
           </div>
         </div>
       </div>
     </article>
   </main>
-  <footer>
-    <div class="container">
+  <footer class="footer">
+    <div class="container flex">
       <a href="#" class="a">
         <img src="./assets/images/logo.svg" alt="logo">
       </a>
       <div>
-        <div></div>
-        <div></div>
+        <div class="footer-snetwork footer-snetwork__vk"></div>
+        <div class="footer-snetwork footer-snetwork__ok"></div>
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
