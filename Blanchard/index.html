@@ -16,22 +16,22 @@
       <nav>
         <ul class="ul flex header-ul">
           <li>
-            <a href="#" class="a header-li">О нас</a>
+            <a href="#about" class="a header-li">О нас</a>
           </li>
           <li>
-            <a href="#" class="a header-li">Галерея</a>
+            <a href="#gallery" class="a header-li">Галерея</a>
           </li>
           <li>
-            <a href="#" class="a header-li">Каталог</a>
+            <a href="#catalog" class="a header-li">Каталог</a>
           </li>
           <li>
-            <a href="#" class="a header-li">События</a>
+            <a href="#event" class="a header-li">События</a>
           </li>
           <li>
-            <a href="#" class="a header-li">Проекты</a>
+            <a href="#project" class="a header-li">Проекты</a>
           </li>
           <li>
-            <a href="#" class="a header-li">Контакты</a>
+            <a href="#contact" class="a header-li">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -52,7 +52,7 @@
         </div>
       </div>
     </article>
-    <article class="article">
+    <article class="article" id="about">
       <div class="container">
         <h2 class="h second-title">О нас</h2>
         <p class="p about-paragraph">
@@ -60,11 +60,11 @@
         </p>
       </div>
     </article>
-    <article class="article article-third">
+    <article class="article article-third" id="gallery">
       <div class="container">
         <h2 class="h second-title gallery-title">Галерея</h2>
         <div class="gallery-container flex">
-          <form name="gallery">
+          <form name="gallery" class="gallery-form">
             <fieldset class="fieldset">
               <label for="first-radio" class="label" onclick="changeImageXIX()">
                 <input type="radio" name="xix" id="first-radio">
@@ -81,14 +81,14 @@
             </fieldset>
           </form>
           <div class="flex">
-            <div class="gallery-image"><img src="./assets/images/xx-gallery-first.jpg" alt="first picture" class="gallery-image__one"></div>
-            <div class="gallery-image"><img src="./assets/images/xx-gallery-second.jpg" alt="second picture" class="gallery-image__two"></div>
-            <div class="gallery-image"><img src="./assets/images/xx-gallery-third.jpg" alt="third picture" class="gallery-image__three"></div>
+            <div class="gallery-image"><img src="./assets/images/xx-gallery-first.jpg" alt="first picture" class="gallery-image__one gallery-img"></div>
+            <div class="gallery-image"><img src="./assets/images/xx-gallery-second.jpg" alt="second picture" class="gallery-image__two gallery-img"></div>
+            <div class="gallery-image"><img src="./assets/images/xx-gallery-third.jpg" alt="third picture" class="gallery-image__three gallery-img"></div>
           </div>
         </div>
       </div>
     </article>
-    <article class="article">
+    <article class="article" id="catalog">
       <div class="container">
         <div class="catalog-container__first">
           <h2 class="h second-title">Каталог</h2>
@@ -148,7 +148,7 @@
         </div>
       </div>
     </article>
-    <article class="article">
+    <article class="article" id="event">
       <div class="container">
         <h2 class="h second-title">События</h2>
         <div class="flex event-container">
@@ -215,7 +215,7 @@
         </div>
       </div>
     </article>
-    <article class="article">
+    <article class="article" id="project">
       <div class="container">
         <h2 class="h second-title">Проекты</h2>
         <p class="p project-paragraph">
@@ -228,7 +228,7 @@
         </div>
       </div>
     </article>
-    <article class="contact-article flex">
+    <article class="contact-article flex" id="contact">
       <div class="container flex contact-container">
         <div class="contact-box">
           <h3 class="h contact-title contact-title">Шоурум № 4</h3>
@@ -236,16 +236,16 @@
         </div>
         <form class="contact-box">
           <div class="flex">
-            <input type="text" placeholder="Имя*" class="input contact-input">
-            <input type="tel" placeholder="Телефон*" class="input contact-input">
+            <input type="text" placeholder="Имя*" class="input contact-input" required>
+            <input type="tel" placeholder="Телефон*" class="input contact-input" required>
             <input type="submit" value="Заказать обратный звонок" class="input contact-input">
           </div>
         </form>
         <div class="contact-box">
           <h3 class="h contact-title contact-title__second">Связаться в один клик</h3>
           <div>
-            <div class="contact-snetwork contact-snetwork__w"></div>
-            <div class="contact-snetwork contact-snetwork__t"></div>
+            <button class="contact-snetwork contact-snetwork__w"></button>
+            <button class="contact-snetwork contact-snetwork__t"></button>
           </div>
         </div>
       </div>
@@ -257,8 +257,8 @@
         <img src="./assets/images/logo.svg" alt="logo">
       </a>
       <div>
-        <div class="footer-snetwork footer-snetwork__vk"></div>
-        <div class="footer-snetwork footer-snetwork__ok"></div>
+        <button class="footer-snetwork footer-snetwork__vk"></button>
+        <button class="footer-snetwork footer-snetwork__ok"></button>
       </div>
     </div>
   </footer>

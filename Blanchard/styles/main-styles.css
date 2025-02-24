@@ -67,11 +67,46 @@ html {
   color: white;
 }
 
+.header-li:hover {
+  color: #C283F3;
+}
+
+.header-li:focus {
+  background-color: #C283F3;
+  outline: 6px solid #C283F3;
+  color: white;
+}
+
+.header-li:active {
+  color: #7943A4;
+  background-color: black;
+  outline: 0px;
+}
+
+
 .header-search {
   display: inline-block;
   width: 28px;
   height: 28px;
   background-image: url(../assets/images/search.svg);
+}
+
+.header-search:hover {
+  background-image: url(../assets/images/search-pirple.svg);
+  outline: none;
+  background-color: black;
+}
+
+.header-search:focus {
+  background-color: #C283F3;
+  outline: 4px solid #C283F3;
+  background-image: url(../assets/images/search.svg);
+}
+
+.header-search:active {
+  background-image: url(../assets/images/search-violet.svg);
+  background-color: black;
+  outline: 0px;
 }
 
 .article-first {
@@ -120,7 +155,23 @@ html {
   color: white;
   background: #9D5CD0;
   border-radius: 100px;
-  border: 0;
+  border: none;
+}
+
+.main-button:hover {
+  outline: 3px solid #D1A9F0;
+}
+
+.main-button:focus {
+  cursor: pointer;
+  outline: 2px solid #C283F3;
+  outline-offset: 3px;
+}
+
+.main-button:active {
+  background: #7943A4;
+  outline: 3px solid #D1A9F0;
+  outline-offset: 0px;
 }
 
 .about-paragraph {
@@ -140,6 +191,10 @@ html {
 
 .gallery-title {
   color: white;
+}
+
+.gallery-form {
+  margin-right: 50px;
 }
 
 .gallery-container {
@@ -185,24 +240,38 @@ html {
 
 .label>input+span:hover::before {
   border-color: #C283F3;
+  cursor: pointer;
+}
+
+.label>input+span:hover {
+  cursor: pointer;
 }
 
 .label>input:active {
   border-color: #C283F3;
+  cursor: pointer;
 }
 
 .label>span:active {
   color: #C283F3;
+  cursor: pointer;
 }
 
 .label>input:focus+span::before {
   border-color: #C283F3;
   background-image: url(../assets/images/point.svg);
   background-size: 4px;
+  cursor: pointer;
 }
 
 .label>input:focus+span {
   color: #C283F3;
+  cursor: pointer;
+}
+
+.gallery-img {
+  max-width: 350px;
+  width: 100%;
 }
 
 .gallery-image:not(:last-child) {
@@ -351,6 +420,25 @@ html {
   border-bottom: 1px solid #9D5CD0;
 }
 
+.event-link:hover {
+  color: #7943A4;
+  border-bottom: 1px solid #7943A4;
+}
+
+.event-link:focus {
+  color: white;
+  border-bottom: 1px solid white;
+  background-color: #9D5CD0;
+  outline: 5px solid #9D5CD0;
+}
+
+.event-link:active {
+  color: #333333;
+  border-bottom: 1px solid #333333;
+  background-color: white;
+  outline: 0px;
+}
+
 .project-paragraph {
   max-width: 1080px;
   margin-bottom: 30px;
@@ -426,6 +514,18 @@ html {
   color: #999999;
 }
 
+.contact-input:not(:last-child):hover {
+  background-color: #ECECEC;
+  cursor: pointer;
+}
+
+.contact-input:not(:last-child):focus {
+  background-color: #ECECEC;
+  cursor: pointer;
+  border: 1px solid black;
+  outline: 0px;
+}
+
 .contact-input:last-child {
   padding: 10px 25px;
   height: 50px;
@@ -440,10 +540,31 @@ html {
   background-color: white;
 }
 
+.contact-input:last-child:hover {
+  color: white;
+  background-color: #9D5CD0;
+  cursor: pointer;
+}
+
+.contact-input:last-child:focus {
+  outline: 2px solid #C283F3;
+  outline-offset: 3px;
+}
+
+.contact-input:last-child:active {
+  color: white;
+  background-color: #7943A4;
+  outline: 3px solid #D1A9F0;
+  outline-offset: 0px;
+  cursor: pointer;
+}
+
 .contact-snetwork {
   width: 40px;
   height: 40px;
   display: inline-block;
+  border: none;
+  border-radius: 50%;
 }
 
 .contact-snetwork__w {
@@ -451,8 +572,40 @@ html {
   margin-right: 20px;
 }
 
+.contact-snetwork__w:hover {
+  background-image: url(../assets/images/Whatsapp-Icon-light.svg);
+  cursor: pointer;
+}
+
+.contact-snetwork__w:focus {
+  background-image: url(../assets/images/Whatsapp-Icon-light.svg);
+}
+
+.contact-snetwork__w:active {
+  background-image: url(../assets/images/Whatsapp-Icon.svg);
+  cursor: pointer;
+  outline: 1px solid #9D5CD0;
+  outline-offset: -1px;
+}
+
 .contact-snetwork__t {
   background-image: url(../assets/images/Telegram_2019_Logo.svg);
+}
+
+.contact-snetwork__t:hover {
+  background-image: url(../assets/images/Telegram_2019_Logo-light.svg);
+  cursor: pointer;
+}
+
+.contact-snetwork__t:focus {
+  background-image: url(../assets/images/Telegram_2019_Logo-light.svg);
+}
+
+.contact-snetwork__t:active {
+  background-image: url(../assets/images/Telegram_2019_Logo.svg);
+  cursor: pointer;
+  outline: 1px solid #9D5CD0;
+  outline-offset: -1px;
 }
 
 .footer {
@@ -464,6 +617,8 @@ html {
   width: 60px;
   height: 60px;
   display: inline-block;
+  background-color: black;
+  border: 0px;
 }
 
 .footer-snetwork__vk {
@@ -471,8 +626,36 @@ html {
   margin-right: 20px;
 }
 
+.footer-snetwork__vk:hover {
+  background-image: url(../assets/images/vk-white.svg);
+  cursor: pointer;
+}
+
+.footer-snetwork__vk:focus {
+  background-image: url(../assets/images/vk-white.svg);
+}
+
+.footer-snetwork__vk:active {
+  background-image: url(../assets/images/vk-pirple.svg);
+  cursor: pointer;
+}
+
 .footer-snetwork__ok {
   background-image: url(../assets/images/ok.svg);
+}
+
+.footer-snetwork__ok:hover {
+  background-image: url(../assets/images/ok-white.svg);
+  cursor: pointer;
+}
+
+.footer-snetwork__ok:focus {
+  background-image: url(../assets/images/ok-white.svg);
+}
+
+.footer-snetwork__ok:active {
+  background-image: url(../assets/images/ok-pirple.svg);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1739px) {
